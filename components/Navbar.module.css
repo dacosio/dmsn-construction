@@ -1,0 +1,218 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  background: transparent;
+}
+
+.solid {
+  background: var(--color-navy-dark);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.35);
+}
+
+.inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--color-white);
+  letter-spacing: 0.05em;
+}
+
+.logoIcon {
+  color: var(--color-red);
+  font-size: 1rem;
+}
+
+.logoAccent {
+  color: var(--color-red);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.link {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+  transition: color var(--transition);
+  position: relative;
+  padding-bottom: 3px;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: var(--color-red);
+  transition: width var(--transition);
+}
+
+.link:hover,
+.link.active {
+  color: var(--color-white);
+}
+
+.link:hover::after,
+.link.active::after {
+  width: 100%;
+}
+
+.ctaBtn {
+  background: var(--color-red);
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--radius);
+  transition: background var(--transition);
+}
+
+.ctaBtn:hover {
+  background: var(--color-red-dark);
+}
+
+/* ── Burger button ── */
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  padding: 4px;
+  width: 34px;
+  height: 34px;
+}
+
+.burger span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: var(--color-white);
+  border-radius: 2px;
+  transition: transform 0.35s ease, opacity 0.25s ease, width 0.25s ease;
+  transform-origin: center;
+}
+
+/* Animate bars into X */
+.burgerActive span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.burgerActive span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.burgerActive span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ── Mobile nav ── */
+.mobileNav {
+  background: var(--color-navy-dark);
+  border-top: 3px solid var(--color-red);
+  padding: 0 var(--spacing-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  /* Hidden state */
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition:
+    max-height 0.35s ease,
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0s linear 0.35s;
+}
+
+/* Open state */
+.mobileNavOpen {
+  max-height: 500px;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  padding: var(--spacing-sm);
+  transition:
+    max-height 0.35s ease,
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0s linear 0s;
+}
+
+.mobileLink {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0.7rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  transition: color var(--transition);
+}
+
+.mobileLink:hover,
+.mobileActive {
+  color: var(--color-red);
+}
+
+.mobileCta {
+  display: block;
+  margin-top: var(--spacing-sm);
+  background: var(--color-red);
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.85rem;
+  text-align: center;
+  border-radius: var(--radius);
+  transition: background var(--transition);
+}
+
+.mobileCta:hover {
+  background: var(--color-red-dark);
+}
+
+@media (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+  .burger {
+    display: flex;
+  }
+}

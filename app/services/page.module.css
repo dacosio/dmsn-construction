@@ -1,0 +1,222 @@
+/* Header */
+.pageHeader {
+  position: relative;
+  background: var(--color-navy-dark);
+  padding: calc(var(--nav-height) + var(--spacing-lg)) 0 calc(var(--spacing-xl) + 2rem);
+  overflow: hidden;
+}
+
+.pageHeaderInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+  color: var(--color-white);
+  position: relative;
+  z-index: 1;
+}
+
+.eyebrow {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--color-red);
+  margin-bottom: var(--spacing-xs);
+}
+
+.pageHeader h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  color: var(--color-white);
+  margin-bottom: var(--spacing-sm);
+  line-height: 1;
+}
+
+.subtitle {
+  font-family: var(--font-body);
+  text-transform: none;
+  letter-spacing: 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  max-width: 580px;
+  line-height: 1.7;
+}
+
+/* Red diagonal slant at bottom of header */
+.headerSlant {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: var(--color-red);
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}
+
+/* Services */
+.servicesList {
+  background: var(--color-light);
+}
+
+.service {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 460px;
+  margin-bottom: var(--spacing-md);
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+.reverse {
+  direction: rtl;
+}
+
+.reverse > * {
+  direction: ltr;
+}
+
+.serviceImage {
+  position: relative;
+  overflow: hidden;
+}
+
+.serviceImg {
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.serviceImgOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(9, 15, 25, 0.3) 0%, transparent 60%);
+}
+
+.serviceImage:hover .serviceImg {
+  transform: scale(1.04);
+}
+
+.serviceContent {
+  background: var(--color-white);
+  padding: var(--spacing-xl) var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--spacing-sm);
+}
+
+.serviceNum {
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--color-light-alt);
+  line-height: 1;
+  display: block;
+}
+
+.serviceContent h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  color: var(--color-navy-dark);
+}
+
+.bar {
+  width: 50px;
+  height: 5px;
+  background: var(--color-red);
+}
+
+.serviceDesc {
+  font-family: var(--font-body);
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+}
+
+.features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.features li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  color: var(--color-steel);
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  background: var(--color-red);
+  flex-shrink: 0;
+  transform: rotate(45deg);
+}
+
+/* Process */
+.process {
+  background: var(--color-navy-dark);
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-sm);
+}
+
+.step {
+  padding: var(--spacing-md);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  position: relative;
+  transition: border-color var(--transition), background var(--transition);
+}
+
+.step:hover {
+  border-color: var(--color-red);
+  background: rgba(212, 43, 43, 0.05);
+}
+
+.stepNum {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--color-red);
+  opacity: 0.25;
+  display: block;
+  line-height: 1;
+  margin-bottom: var(--spacing-xs);
+}
+
+.step h3 {
+  font-size: 1.15rem;
+  color: var(--color-white);
+  margin-bottom: 0.4rem;
+}
+
+.step p {
+  font-family: var(--font-body);
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .steps { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .service { grid-template-columns: 1fr; direction: ltr; }
+  .reverse { direction: ltr; }
+  .serviceImage { height: 260px; }
+  .serviceContent { padding: var(--spacing-md) var(--spacing-sm); }
+}
+
+@media (max-width: 600px) {
+  .steps { grid-template-columns: 1fr; }
+}
