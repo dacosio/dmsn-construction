@@ -5,7 +5,7 @@ import styles from './page.module.css';
 export const metadata: Metadata = {
   title: 'Projects',
   description:
-    'Browse the DMSN portfolio — airport terminals, highway corridors, warehouse complexes, residential communities, and commercial towers.',
+    'Browse the DMSN portfolio: airport terminals, highway corridors, warehouse complexes, residential communities, and commercial towers.',
 };
 
 const projects = [

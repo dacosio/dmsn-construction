@@ -59,7 +59,7 @@ export default function ServicesPage() {
         <div className={styles.pageHeaderInner}>
           <p className={styles.eyebrow}>What We Build</p>
           <h1>Five Sectors.<br />One Standard.</h1>
-          <p className={styles.subtitle}>DMSN operates across five construction sectors — aviation, industrial, institutional, residential, and civil — each with dedicated engineering teams and proven delivery systems.</p>
+          <p className={styles.subtitle}>DMSN operates across five construction sectors (aviation, industrial, institutional, residential, and civil), each with dedicated engineering teams and proven delivery systems.</p>
         </div>
         <div className={styles.headerSlant} aria-hidden="true" />
       </section>

@@ -5,13 +5,13 @@ import styles from './page.module.css';
 export const metadata: Metadata = {
   title: 'About Us',
   description:
-    'Learn about DMSN Trading and Construction — founded in 2013 by Civil Engineer Apollo B. Cosio, delivering quality aviation, industrial, and institutional construction across the Philippines.',
+    'Learn about DMSN Trading and Construction, founded in 2013 by Civil Engineer Apollo B. Cosio, delivering quality aviation, industrial, and institutional construction across the Philippines.',
 };
 
 const team = [
   { name: 'Apollo B. Cosio', role: 'Director & Founder', image: '/images/team1.jpg', bio: 'A licensed Civil Engineer from Holy Angel University with 30+ years spanning Clark Air Base, the Middle East, and Iraq. Apollo founded DMSN Trading and Construction, bringing international construction standards to the Philippines.' },
   { name: 'Arch. Chalshey H. Cunanan', role: 'Senior Architect', image: '/images/team2.jpg', bio: 'Oversees architectural design and planning, translating client requirements into precise construction specifications for every project.' },
-  { name: 'Cynthia Q. Capati', role: 'Materials & QC Engineer', image: '/images/team3.jpg', bio: 'Leads our 4-phase quality inspection program — from preparatory review through final inspection — ensuring all materials and workmanship meet specification.' },
+  { name: 'Cynthia Q. Capati', role: 'Materials & QC Engineer', image: '/images/team3.jpg', bio: 'Leads our 4-phase quality inspection program, from preparatory review through final inspection, ensuring all materials and workmanship meet specification.' },
 ];
 
 const milestones = [
@@ -44,9 +44,9 @@ export default function AboutPage() {
                 <h2 id="story-heading">Our Story</h2>
                 <div className="bar" />
               </div>
-              <p>Apollo Cosio, a licensed Civil Engineer from Holy Angel University, built his expertise over decades — from structural work at Clark Air Base to pipeline engineering in Saudi Arabia and Bahrain, and quality assurance operations in Iraq and Afghanistan.</p>
-              <p>Back in the Philippines, Apollo founded DMSN Trading and Construction — bringing international construction standards to hangars, warehouses, institutional buildings, and civil works across Pampanga and beyond.</p>
-              <p>We don&apos;t chase volume. We build trust. Our clients — from Singapore Airlines to municipal governments — return because we deliver on every commitment.</p>
+              <p>Apollo Cosio, a licensed Civil Engineer from Holy Angel University, built his expertise over decades. His career spans structural work at Clark Air Base, pipeline engineering in Saudi Arabia and Bahrain, and quality assurance operations in Iraq and Afghanistan.</p>
+              <p>Back in the Philippines, Apollo founded DMSN Trading and Construction, bringing international construction standards to hangars, warehouses, institutional buildings, and civil works across Pampanga and beyond.</p>
+              <p>We don&apos;t chase volume. We build trust. Our clients, from Singapore Airlines to municipal governments, return because we deliver on every commitment.</p>
             </div>
             <div className={styles.milestones} aria-label="Company milestones">
               {milestones.map(({ year, event }) => (
@@ -70,7 +70,7 @@ export default function AboutPage() {
           <div className={styles.valuesGrid}>
             {[
               { icon: '🛡️', title: 'Safety', desc: 'Stringent H&S compliance on every site. The welfare of all team members is paramount.' },
-              { icon: '🔄', title: 'Consistency', desc: '4-phase inspection — Preparatory, Initial, Follow-Up, and Final — applied to every project without exception.' },
+              { icon: '🔄', title: 'Consistency', desc: '4-phase inspection (Preparatory, Initial, Follow-Up, and Final) applied to every project without exception.' },
               { icon: '📐', title: 'Quality', desc: 'Random sampling, statistical methods, and non-compliance returns ensure every deliverable meets specification.' },
               { icon: '🤝', title: 'Integrity', desc: 'Fair and true in all dealings with employees, clients, vendors, and partners.' },
             ].map(({ icon, title, desc }) => (

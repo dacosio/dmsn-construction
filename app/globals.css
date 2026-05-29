@@ -67,7 +67,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 
 .section { padding: var(--spacing-xl) 0; }
 
-/* Section heading — left-aligned by default (industrial feel) */
+/* Section heading - left-aligned by default (industrial feel) */
 .section-heading { margin-bottom: var(--spacing-lg); }
 
 .section-heading h2 {
@@ -111,7 +111,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   margin-bottom: -3rem;
 }
 
-/* Remove diagonals on mobile — negative margins cause section overlap */
+/* Remove diagonals on mobile - negative margins cause section overlap */
 @media (max-width: 768px) {
   .diagonal-top {
     clip-path: none;

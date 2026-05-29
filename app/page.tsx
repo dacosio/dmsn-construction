@@ -4,9 +4,9 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'DMSN — Built to Last',
+  title: 'DMSN | Built to Last',
   description:
-    'DMSN Trading and Construction specialises in aircraft hangars, warehouses, institutional buildings, and civil infrastructure — PCAB-licensed contractor with 13+ years of proven delivery in the Philippines.',
+    'DMSN Trading and Construction specialises in aircraft hangars, warehouses, institutional buildings, and civil infrastructure. PCAB-licensed contractor with 13+ years of proven delivery in the Philippines.',
 };
 
 const stats = [
@@ -33,7 +33,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'GeneralContractor',
   name: 'DMSN Trading and Construction',
-  description: 'PCAB-licensed construction specialists — aircraft hangars, warehouses, institutional buildings, and civil infrastructure in the Philippines.',
+  description: 'PCAB-licensed construction specialists: aircraft hangars, warehouses, institutional buildings, and civil infrastructure in the Philippines.',
   url: 'https://dmsn.com',
   telephone: '+63-999-360-9678',
   email: 'abc_mrc@yahoo.com',
@@ -60,7 +60,7 @@ export default function HomePage() {
           <p className={styles.heroEyebrow}>Aviation • Industrial • Civil</p>
           <h1 className={styles.heroTitle}>We Build<br /><span>What Matters.</span></h1>
           <p className={styles.heroSub}>
-            From aircraft hangars to industrial warehouses — DMSN delivers quality construction projects across aviation, industrial, and civil sectors throughout the Philippines.
+            From aircraft hangars to industrial warehouses, DMSN delivers quality construction projects across aviation, industrial, and civil sectors throughout the Philippines.
           </p>
           <div className={styles.heroCtas}>
             <Link href="/projects" className="btn btn-red">Our Projects</Link>
@@ -103,7 +103,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Why DMSN — dark diagonal band ── */}
+      {/* ── Why DMSN - dark diagonal band ── */}
       <section className={`diagonal-both ${styles.whySection}`} aria-labelledby="why-heading">
         <div className="container">
           <div className={styles.whyGrid}>
@@ -111,7 +111,7 @@ export default function HomePage() {
               <p className={styles.whyEyebrow}>Why DMSN</p>
               <h2 id="why-heading">Built Different.<br />Since 2013.</h2>
               <div className={styles.whyBar} />
-              <p>We don't cut corners. Every project — from a hangar steel structure to a cistern tank — is managed end-to-end by our own licensed engineers, project managers, and crews.</p>
+              <p>We don't cut corners. Every project, from a hangar steel structure to a cistern tank, is managed end-to-end by our own licensed engineers, project managers, and crews.</p>
               <div className={styles.whyChecks}>
                 {[
                   'PCAB-licensed general contractor',

@@ -25,7 +25,7 @@
   );
 }
 
-/* Diagonal red badge — top right corner */
+/* Diagonal red badge - top right corner */
 .heroBadge {
   position: absolute;
   top: var(--nav-height);
@@ -89,7 +89,7 @@
   flex-wrap: wrap;
 }
 
-/* Stats strip — pinned to hero bottom */
+/* Stats strip - pinned to hero bottom */
 .heroStats {
   position: absolute;
   bottom: 0;

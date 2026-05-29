@@ -60,7 +60,7 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Always in DOM — CSS handles the transition */}
+      {/* Always in DOM - CSS handles the transition */}
       <nav
         className={[styles.mobileNav, menuOpen ? styles.mobileNavOpen : ''].filter(Boolean).join(' ')}
         aria-label="Mobile navigation"

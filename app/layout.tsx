@@ -20,7 +20,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://dmsn.com'),
   title: {
-    default: 'DMSN — Built to Last',
+    default: 'DMSN | Built to Last',
     template: '%s | DMSN',
   },
   description:
@@ -32,14 +32,14 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://dmsn.com',
     siteName: 'DMSN',
-    title: 'DMSN — Built to Last',
+    title: 'DMSN | Built to Last',
     description: 'PCAB-licensed construction specialists delivering hangars, warehouses, and institutional projects across the Philippines.',
     images: [{ url: '/images/hero.jpg', width: 1200, height: 630, alt: 'DMSN project site' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'DMSN — Built to Last',
-    description: 'PCAB-licensed construction specialists — hangars, warehouses, and institutional buildings in the Philippines.',
+    title: 'DMSN | Built to Last',
+    description: 'PCAB-licensed construction specialists: hangars, warehouses, and institutional buildings in the Philippines.',
     images: ['/images/hero.jpg'],
   },
   robots: { index: true, follow: true },
