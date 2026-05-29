@@ -5,33 +5,33 @@ import styles from './page.module.css';
 export const metadata: Metadata = {
   title: 'About Us',
   description:
-    'Learn about Ironclad Construction — 30 years of building excellence, our experienced leadership team, and the values that drive every project we deliver.',
+    'Learn about DMSN Trading and Construction — founded in 2013 by Civil Engineer Apollo B. Cosio, delivering quality aviation, industrial, and institutional construction across the Philippines.',
 };
 
 const team = [
-  { name: 'Marcus Webb', role: 'CEO & Founder', image: '/images/team1.jpg', bio: 'A third-generation builder with 35 years in the field, Marcus founded Ironclad with a single rule: never cut a corner.' },
-  { name: 'Sandra Okoye', role: 'VP of Operations', image: '/images/team2.jpg', bio: 'Sandra oversees delivery across all active sites, ensuring every project stays on schedule and within budget.' },
-  { name: 'David Chiang', role: 'Chief Engineer', image: '/images/team3.jpg', bio: 'A licensed structural engineer, David leads our technical team and signs off on every design before ground breaks.' },
+  { name: 'Apollo B. Cosio', role: 'Director & Founder', image: '/images/team1.jpg', bio: 'A licensed Civil Engineer from Holy Angel University with 30+ years spanning Clark Air Base, the Middle East, and Iraq. Apollo founded DMSN Trading and Construction, bringing international construction standards to the Philippines.' },
+  { name: 'Arch. Chalshey H. Cunanan', role: 'Senior Architect', image: '/images/team2.jpg', bio: 'Oversees architectural design and planning, translating client requirements into precise construction specifications for every project.' },
+  { name: 'Cynthia Q. Capati', role: 'Materials & QC Engineer', image: '/images/team3.jpg', bio: 'Leads our 4-phase quality inspection program — from preparatory review through final inspection — ensuring all materials and workmanship meet specification.' },
 ];
 
 const milestones = [
-  { year: '1994', event: 'Ironclad founded in Metro City with a crew of 8' },
-  { year: '2001', event: 'Completed first commercial tower project — Westfield Plaza' },
-  { year: '2008', event: 'Expanded to industrial sector, first warehouse contract' },
-  { year: '2015', event: 'ISO 9001 certification achieved; team reaches 100 members' },
-  { year: '2020', event: 'Launched green building division, LEED-certified projects' },
-  { year: '2024', event: '850+ projects completed; 30th anniversary celebrated' },
+  { year: '2013', event: 'Founded DMSN Trading and Construction in Pampanga after serving as Construction Manager at Aircraft Support Industries' },
+  { year: '2016', event: 'Completed first major industrial warehouse contracts at Angeles Industrial Park, Bacolor, Pampanga' },
+  { year: '2020', event: 'Completed structural steel works for new Metrojet Hangar at Clark Freeport Zone' },
+  { year: '2021', event: 'Completed SIA Engineering Philippines Hangar 2 Project at Clark Freeport Zone' },
+  { year: '2022', event: 'Delivered New Line Maintenance Office and Warehouse at Clark International Airport Terminal 2' },
+  { year: '2024', event: 'Delivered New Municipal Hall, Concepcion, Tarlac and NLEX tree trimming contract' },
 ];
 
 export default function AboutPage() {
   return (
     <>
       <section className={styles.pageHeader} aria-label="About header">
-        <Image src="/images/about.jpg" alt="Ironclad Construction team on site" fill priority className={styles.headerImg} sizes="100vw" />
+        <Image src="/images/about.jpg" alt="DMSN team on site" fill priority className={styles.headerImg} sizes="100vw" />
         <div className={styles.headerOverlay} />
         <div className={styles.headerContent}>
-          <p className={styles.eyebrow}>About Ironclad</p>
-          <h1>30 Years of Building Excellence</h1>
+          <p className={styles.eyebrow}>About DMSN</p>
+          <h1>Built on a Decade of Proven Delivery</h1>
         </div>
       </section>
 
@@ -44,9 +44,9 @@ export default function AboutPage() {
                 <h2 id="story-heading">Our Story</h2>
                 <div className="bar" />
               </div>
-              <p>Marcus Webb started Ironclad Construction in 1994 with a pickup truck, eight workers, and a conviction that the industry needed a contractor who put craftsmanship before shortcuts.</p>
-              <p>Three decades later, Ironclad has completed over 850 projects across residential, commercial, and industrial sectors — never missing a material delivery deadline and never once walking away from a commitment.</p>
-              <p>We don&apos;t chase volume. We build relationships. Most of our clients have worked with us on three or more projects.</p>
+              <p>Apollo Cosio, a licensed Civil Engineer from Holy Angel University, built his expertise over decades — from structural work at Clark Air Base to pipeline engineering in Saudi Arabia and Bahrain, and quality assurance operations in Iraq and Afghanistan.</p>
+              <p>Back in the Philippines, Apollo founded DMSN Trading and Construction — bringing international construction standards to hangars, warehouses, institutional buildings, and civil works across Pampanga and beyond.</p>
+              <p>We don&apos;t chase volume. We build trust. Our clients — from Singapore Airlines to municipal governments — return because we deliver on every commitment.</p>
             </div>
             <div className={styles.milestones} aria-label="Company milestones">
               {milestones.map(({ year, event }) => (
@@ -69,10 +69,10 @@ export default function AboutPage() {
           </div>
           <div className={styles.valuesGrid}>
             {[
-              { icon: '🛡️', title: 'Safety First', desc: 'Zero-compromise safety culture on every site, every day.' },
-              { icon: '📐', title: 'Precision', desc: 'Every measurement, every material, every deadline held to standard.' },
-              { icon: '🤝', title: 'Integrity', desc: 'Honest pricing, transparent progress, no surprises.' },
-              { icon: '🌱', title: 'Sustainability', desc: 'LEED-certified capabilities and green building practices across all projects.' },
+              { icon: '🛡️', title: 'Safety', desc: 'Stringent H&S compliance on every site. The welfare of all team members is paramount.' },
+              { icon: '🔄', title: 'Consistency', desc: '4-phase inspection — Preparatory, Initial, Follow-Up, and Final — applied to every project without exception.' },
+              { icon: '📐', title: 'Quality', desc: 'Random sampling, statistical methods, and non-compliance returns ensure every deliverable meets specification.' },
+              { icon: '🤝', title: 'Integrity', desc: 'Fair and true in all dealings with employees, clients, vendors, and partners.' },
             ].map(({ icon, title, desc }) => (
               <div key={title} className={styles.valueCard}>
                 <span className={styles.valueIcon} aria-hidden="true">{icon}</span>
@@ -90,7 +90,7 @@ export default function AboutPage() {
           <div className="section-heading centered">
             <h2 id="team-heading">Leadership Team</h2>
             <div className="bar" />
-            <p>Experienced leaders who have built their careers by building great things.</p>
+            <p>Experienced professionals committed to delivering quality work safely and on schedule.</p>
           </div>
           <div className={styles.teamGrid}>
             {team.map(({ name, role, image, bio }) => (

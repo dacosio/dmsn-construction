@@ -18,28 +18,28 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://ironcladconstruction.com'),
+  metadataBase: new URL('https://dmsn.com'),
   title: {
-    default: 'Ironclad Construction — Built to Last',
-    template: '%s | Ironclad Construction',
+    default: 'DMSN — Built to Last',
+    template: '%s | DMSN',
   },
   description:
-    'Ironclad Construction delivers residential, commercial, and industrial building projects with 30 years of expertise, on time and on budget.',
-  keywords: ['construction company', 'general contractor', 'residential construction', 'commercial construction', 'Ironclad Construction'],
-  authors: [{ name: 'Ironclad Construction' }],
+    'DMSN Trading and Construction delivers aircraft hangars, warehouses, institutional buildings, and civil infrastructure across the Philippines. PCAB-licensed with 30+ years of engineering expertise.',
+  keywords: ['construction company', 'general contractor', 'aircraft hangars', 'warehouses', 'institutional buildings', 'DMSN', 'Pampanga', 'Philippines'],
+  authors: [{ name: 'DMSN Trading and Construction' }],
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://ironcladconstruction.com',
-    siteName: 'Ironclad Construction',
-    title: 'Ironclad Construction — Built to Last',
-    description: 'Delivering residential, commercial, and industrial building projects with 30 years of expertise.',
-    images: [{ url: '/images/hero.jpg', width: 1200, height: 630, alt: 'Ironclad Construction project site' }],
+    url: 'https://dmsn.com',
+    siteName: 'DMSN',
+    title: 'DMSN — Built to Last',
+    description: 'PCAB-licensed construction specialists delivering hangars, warehouses, and institutional projects across the Philippines.',
+    images: [{ url: '/images/hero.jpg', width: 1200, height: 630, alt: 'DMSN project site' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Ironclad Construction — Built to Last',
-    description: 'Delivering quality construction projects for 30 years.',
+    title: 'DMSN — Built to Last',
+    description: 'PCAB-licensed construction specialists — hangars, warehouses, and institutional buildings in the Philippines.',
     images: ['/images/hero.jpg'],
   },
   robots: { index: true, follow: true },

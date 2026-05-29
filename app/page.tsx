@@ -4,42 +4,41 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Ironclad Construction — Built to Last',
+  title: 'DMSN — Built to Last',
   description:
-    'Ironclad Construction specialises in airports, residential, warehouses, commercial buildings, roads and highways — delivering complex infrastructure with 30 years of expertise.',
+    'DMSN Trading and Construction specialises in aircraft hangars, warehouses, institutional buildings, and civil infrastructure — PCAB-licensed contractor with 13+ years of proven delivery in the Philippines.',
 };
 
 const stats = [
-  { value: '30+', label: 'Years' },
-  { value: '850+', label: 'Projects' },
-  { value: '12', label: 'Countries' },
-  { value: '98%', label: 'On Time' },
+  { value: '13+', label: 'Years in Business' },
+  { value: '50+', label: 'Projects' },
+  { value: '100%', label: 'PCAB Licensed' },
 ];
 
 const specializations = [
-  { icon: '✈', title: 'Airports', desc: 'Terminals, runways, taxiways, and full airport infrastructure.' },
-  { icon: '🏠', title: 'Residential', desc: 'Single-family, multi-family, and large housing developments.' },
-  { icon: '🏭', title: 'Warehouses', desc: 'Distribution centres, cold storage, and logistics facilities.' },
-  { icon: '🏢', title: 'Commercial', desc: 'Office towers, retail, hotels, and mixed-use developments.' },
-  { icon: '🛣', title: 'Roads & Highways', desc: 'Freeways, interchanges, bridges, and urban road networks.' },
+  { icon: '✈', title: 'Aviation & Hangars', desc: 'Aircraft hangars, roofing, cladding, steel structures, and aviation support facilities.' },
+  { icon: '🏭', title: 'Warehouses', desc: 'Industrial warehouses, logistics facilities, cistern tanks, and pump rooms.' },
+  { icon: '🏛', title: 'Institutional', desc: 'Municipal halls, government buildings, and institutional structures.' },
+  { icon: '🏠', title: 'Residential', desc: 'Private homes, housing developments, and community projects.' },
+  { icon: '🔧', title: 'Civil & Infrastructure', desc: 'Water supply systems, access structures, comfort facilities, and site works.' },
 ];
 
 const featuredProjects = [
-  { src: '/images/project-airport.jpg', name: 'Terminal 4 Expansion', type: 'Airport', location: 'Metro Int\'l Airport' },
-  { src: '/images/project-road.jpg', name: 'Interstate 90 Widening', type: 'Highway', location: 'Northern Corridor' },
-  { src: '/images/project-warehouse.jpg', name: 'Pacific Logistics Hub', type: 'Warehouse', location: 'Westport District' },
+  { src: '/images/project-airport.jpg', name: 'Metrojet Hangar', type: 'Hangar', location: 'Clark Freeport Zone, Pampanga' },
+  { src: '/images/project-warehouse.jpg', name: 'AIPI Kaifeng Warehouse', type: 'Warehouse', location: 'Angeles Industrial Park, Bacolor' },
+  { src: '/images/project-commercial.jpg', name: 'New Municipal Hall', type: 'Institutional', location: 'Concepcion, Tarlac' },
 ];
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'GeneralContractor',
-  name: 'Ironclad Construction',
-  description: 'Infrastructure and construction specialists — airports, roads, warehouses, residential, and commercial projects.',
-  url: 'https://ironcladconstruction.com',
-  telephone: '+1-800-555-0100',
-  email: 'info@ironcladconstruction.com',
-  foundingDate: '1994',
-  address: { '@type': 'PostalAddress', streetAddress: '789 Steel Avenue', addressLocality: 'Metro City', addressCountry: 'US' },
+  name: 'DMSN Trading and Construction',
+  description: 'PCAB-licensed construction specialists — aircraft hangars, warehouses, institutional buildings, and civil infrastructure in the Philippines.',
+  url: 'https://dmsn.com',
+  telephone: '+63-999-360-9678',
+  email: 'abc_mrc@yahoo.com',
+  foundingDate: '2013',
+  address: { '@type': 'PostalAddress', streetAddress: 'Block 20 Lot 25 Phase 3 Savannah Greenplains', addressLocality: 'Cuayan, Angeles City', addressRegion: 'Pampanga', postalCode: '2009', addressCountry: 'PH' },
 };
 
 export default function HomePage() {
@@ -49,19 +48,19 @@ export default function HomePage() {
 
       {/* ── Hero ── */}
       <section className={styles.hero} aria-label="Hero">
-        <Image src="/images/hero.jpg" alt="Large-scale Ironclad construction site with cranes" fill priority className={styles.heroImg} sizes="100vw" />
+        <Image src="/images/hero.jpg" alt="Large-scale DMSN construction site with cranes" fill priority className={styles.heroImg} sizes="100vw" data-credit="Photo: Scott Blake / Unsplash" />
         <div className={styles.heroOverlay} />
 
         {/* Red diagonal badge */}
         <div className={styles.heroBadge} aria-hidden="true">
-          <span>Est. 1994</span>
+          <span>Est. 2013</span>
         </div>
 
         <div className={styles.heroContent}>
-          <p className={styles.heroEyebrow}>Infrastructure • Civil • Commercial</p>
+          <p className={styles.heroEyebrow}>Aviation • Industrial • Civil</p>
           <h1 className={styles.heroTitle}>We Build<br /><span>What Matters.</span></h1>
           <p className={styles.heroSub}>
-            From airport runways to interstate highways — Ironclad delivers large-scale infrastructure and construction projects that stand the test of time.
+            From aircraft hangars to industrial warehouses — DMSN delivers quality construction projects across aviation, industrial, and civil sectors throughout the Philippines.
           </p>
           <div className={styles.heroCtas}>
             <Link href="/projects" className="btn btn-red">Our Projects</Link>
@@ -86,7 +85,7 @@ export default function HomePage() {
           <div className="section-heading">
             <h2 id="spec-heading">Our Specializations</h2>
             <div className="bar" />
-            <p>Five sectors. One contractor. Uncompromising delivery standards across every type of project we take on.</p>
+            <p>Five sectors. One contractor. Uncompromising safety, consistency, and quality across every project we take on.</p>
           </div>
           <div className={styles.specGrid}>
             {specializations.map(({ icon, title, desc }) => (
@@ -104,22 +103,22 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Why Ironclad — dark diagonal band ── */}
+      {/* ── Why DMSN — dark diagonal band ── */}
       <section className={`diagonal-both ${styles.whySection}`} aria-labelledby="why-heading">
         <div className="container">
           <div className={styles.whyGrid}>
             <div className={styles.whyText}>
-              <p className={styles.whyEyebrow}>Why Ironclad</p>
-              <h2 id="why-heading">Built Different.<br />Since 1994.</h2>
+              <p className={styles.whyEyebrow}>Why DMSN</p>
+              <h2 id="why-heading">Built Different.<br />Since 2013.</h2>
               <div className={styles.whyBar} />
-              <p>We don't subcontract the hard parts. Every project — from a runway extension to a 40-storey tower — is managed end-to-end by our own licensed engineers, project managers, and crews.</p>
+              <p>We don't cut corners. Every project — from a hangar steel structure to a cistern tank — is managed end-to-end by our own licensed engineers, project managers, and crews.</p>
               <div className={styles.whyChecks}>
                 {[
-                  'Self-performing general contractor',
-                  'ISO 9001 quality management',
-                  'In-house structural engineering',
-                  'Zero subcontractor surprises',
-                  'On-time delivery guarantee',
+                  'PCAB-licensed general contractor',
+                  '4-phase quality inspection system',
+                  'Licensed civil & structural engineering',
+                  'Aviation and industrial specialists',
+                  'On-time delivery commitment',
                 ].map((item) => (
                   <div key={item} className={styles.whyCheck}>
                     <span className={styles.checkMark} aria-hidden="true">✔</span>
@@ -130,9 +129,9 @@ export default function HomePage() {
               <Link href="/about" className="btn btn-red">Our Story</Link>
             </div>
             <div className={styles.whyImageWrap}>
-              <Image src="/images/about.jpg" alt="Ironclad construction crew at work" fill className={styles.whyImg} sizes="(max-width: 768px) 100vw, 50vw" />
+              <Image src="/images/why-dmsn.jpg" alt="DMSN engineers reviewing plans on site" fill className={styles.whyImg} sizes="(max-width: 768px) 100vw, 50vw" />
               <div className={styles.whyImageBadge}>
-                <span className={styles.badgeNum}>850+</span>
+                <span className={styles.badgeNum}>50+</span>
                 <span className={styles.badgeLabel}>Projects Completed</span>
               </div>
             </div>

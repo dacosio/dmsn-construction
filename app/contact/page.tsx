@@ -5,12 +5,12 @@ import styles from './page.module.css';
 export const metadata: Metadata = {
   title: 'Contact Us',
   description:
-    'Get in touch with Ironclad Construction. Request a free quote, ask about our services, or speak with a project manager. We respond within 1 business day.',
+    'Get in touch with DMSN. Request a free quote, ask about our services, or speak with a project manager. We respond within 1 business day.',
 };
 
 const offices = [
-  { city: 'Metro City HQ', address: '789 Steel Avenue, Metro City, MC 10001', phone: '+1 (800) 555-0100' },
-  { city: 'Northport Office', address: '45 Harbor Blvd, Northport, MC 20045', phone: '+1 (800) 555-0101' },
+  { city: 'Angeles City Office', address: 'Block 20 Lot 25 Phase 3 Savannah Greenplains, Cuayan, Angeles City, Pampanga 2009', phone: '+63 999 360 9678' },
+  { city: 'Porac Site Office', address: 'Blk 01, Lot 88 Model Community, Pio, Porac, Pampanga 2008', phone: '+63 966 174 7499' },
 ];
 
 export default function ContactPage() {
@@ -41,7 +41,7 @@ export default function ContactPage() {
 
               <div className={styles.officeExtra}>
                 <p className={styles.officeCity}>Email</p>
-                <p>info@ironcladconstruction.com</p>
+                <p>abc_mrc@yahoo.com</p>
               </div>
 
               <div className={styles.officeExtra}>

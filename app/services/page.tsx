@@ -6,49 +6,49 @@ import styles from './page.module.css';
 export const metadata: Metadata = {
   title: 'Services',
   description:
-    'Ironclad Construction specialises in airport construction, residential developments, warehouses, commercial buildings, and roads & highways across North America.',
+    'DMSN specialises in aircraft hangars, industrial warehouses, institutional buildings, residential construction, and civil infrastructure across Pampanga and the Philippines.',
 };
 
 const services = [
   {
-    title: 'Airports',
+    title: 'Aviation & Hangars',
     image: '/images/service-airport.jpg',
-    alt: 'Airport terminal and runway construction',
+    alt: 'Aircraft hangar steel structure under construction',
     description:
-      'We have designed and built passenger terminals, cargo facilities, runways, taxiways, and full airside infrastructure. Our airport division understands the strict regulatory and safety environment of aviation construction.',
-    features: ['Passenger & cargo terminals', 'Runway and taxiway construction', 'Airside & landside infrastructure', 'ATC towers & navigational facilities', 'FAA/ICAO compliance expertise'],
+      'DMSN has constructed and retrofitted aircraft hangars and aviation support facilities across Clark Freeport Zone. Projects include full structural steel works, roofing, cladding, gutters, purlins, and interior finishes for clients including Metrojet and SIA Engineering Philippines.',
+    features: ['Structural steel hangar construction', 'Roofing and wall cladding', 'Purlins, girts, and support frames', 'Gutter installation and leak elimination', 'Interior finishes and partitions'],
+  },
+  {
+    title: 'Warehouses & Industrial',
+    image: '/images/service-warehouse.jpg',
+    alt: 'Large industrial warehouse under construction',
+    description:
+      'We build industrial warehouses and logistics facilities to exact specifications, including full civil and structural works. Completed projects include multiple warehouses at Angeles Industrial Park in Bacolor, Pampanga, with cistern tanks, pump rooms, and water supply systems.',
+    features: ['Industrial warehouse construction', 'Cistern tank and pump room construction', 'Water supply system installation', 'Foundation and structural works', 'Site preparation and civil works'],
+  },
+  {
+    title: 'Institutional Buildings',
+    image: '/images/service-commercial.jpg',
+    alt: 'Multi-storey institutional building under construction',
+    description:
+      'Our team delivers government and institutional structures from the ground up. Completed projects include the 2-storey New Municipal Hall of Concepcion, Tarlac, and airport terminal comfort facilities at Clark International Airport.',
+    features: ['Municipal halls and government buildings', 'Structural steel from ground up', 'Elevator frames and steel supports', 'Comfort rooms and auxiliary facilities', 'Tree trimming and site preparation'],
   },
   {
     title: 'Residential',
     image: '/images/service-residential.jpg',
-    alt: 'Residential housing development under construction',
+    alt: 'Residential house under construction',
     description:
-      'From single-family custom homes to high-density housing estates, our residential division delivers quality living spaces on time. We manage every phase from site preparation through final inspection.',
-    features: ['Custom single-family homes', 'Multi-unit housing developments', 'High-rise residential', 'Master-planned communities', 'Affordable housing programs'],
+      'From private homes in Pampanga to housing developments, our residential division delivers quality living spaces. We manage every phase from site preparation through final handover.',
+    features: ['Custom private homes', 'Housing development projects', 'Site preparation and earthworks', 'Structural and civil works', 'End-to-end project management'],
   },
   {
-    title: 'Warehouses & Logistics',
-    image: '/images/service-warehouse.jpg',
-    alt: 'Large warehouse and distribution centre',
-    description:
-      'Modern supply chains demand facilities built for speed, scale, and efficiency. We build warehouses, distribution centres, cold storage facilities, and fulfilment hubs to exact operational specifications.',
-    features: ['Distribution & fulfilment centres', 'Cold storage & refrigerated facilities', 'Cross-dock facilities', 'Automated warehouse fit-outs', 'Heavy-duty floor systems'],
-  },
-  {
-    title: 'Commercial',
-    image: '/images/service-commercial.jpg',
-    alt: 'Commercial office building construction',
-    description:
-      'Our commercial division builds the spaces where business thrives — from landmark office towers to regional shopping centres and five-star hotels. Every project is managed with minimal disruption and maximum quality.',
-    features: ['Office towers & business parks', 'Retail & shopping centres', 'Hotels & hospitality', 'Mixed-use developments', 'Data centres'],
-  },
-  {
-    title: 'Roads & Highways',
+    title: 'Civil & Infrastructure',
     image: '/images/service-roads.jpg',
-    alt: 'Highway and road construction equipment',
+    alt: 'Civil infrastructure and site works',
     description:
-      'Our civil division has built and rehabilitated thousands of kilometres of highways, freeways, arterial roads, and urban streets. We handle full design-build contracts, including drainage, lighting, and signage.',
-    features: ['Freeways & interstate highways', 'Urban road networks', 'Bridge & overpass construction', 'Intersection & interchange design', 'Road rehabilitation & resurfacing'],
+      'Our civil works capability covers water supply systems, access structures, access stairs, and site infrastructure. We have delivered water supply installations in Barangay Mancatian, Porac, and tree trimming along the NLEX and SCTEX corridors.',
+    features: ['Water supply system construction', 'Access stair fabrication & installation', 'Tree height reduction and trimming', 'Slope protection and boulder supply', 'Site infrastructure works'],
   },
 ];
 
@@ -59,7 +59,7 @@ export default function ServicesPage() {
         <div className={styles.pageHeaderInner}>
           <p className={styles.eyebrow}>What We Build</p>
           <h1>Five Sectors.<br />One Standard.</h1>
-          <p className={styles.subtitle}>Ironclad operates across five construction sectors — each with dedicated engineering teams, specialised equipment, and proven delivery systems.</p>
+          <p className={styles.subtitle}>DMSN operates across five construction sectors — aviation, industrial, institutional, residential, and civil — each with dedicated engineering teams and proven delivery systems.</p>
         </div>
         <div className={styles.headerSlant} aria-hidden="true" />
       </section>

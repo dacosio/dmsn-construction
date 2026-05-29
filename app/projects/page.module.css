@@ -63,7 +63,10 @@
   gap: 3px;
 }
 
-.card { overflow: hidden; }
+.card {
+  overflow: hidden;
+  position: relative;
+}
 
 .wide { grid-column: span 2; }
 .tall { grid-row: span 2; }

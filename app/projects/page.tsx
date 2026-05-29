@@ -5,16 +5,16 @@ import styles from './page.module.css';
 export const metadata: Metadata = {
   title: 'Projects',
   description:
-    'Browse the Ironclad Construction portfolio — airport terminals, highway corridors, warehouse complexes, residential communities, and commercial towers.',
+    'Browse the DMSN portfolio — airport terminals, highway corridors, warehouse complexes, residential communities, and commercial towers.',
 };
 
 const projects = [
-  { src: '/images/project-airport.jpg', name: 'Terminal 4 Expansion', type: 'Airport', location: 'Metro International Airport', year: '2024', span: 'wide' },
-  { src: '/images/project-road.jpg', name: 'Interstate 90 Widening', type: 'Highway', location: 'Northern Corridor, 142km', year: '2023' },
-  { src: '/images/project-warehouse.jpg', name: 'Pacific Logistics Hub', type: 'Warehouse', location: 'Westport District', year: '2023' },
-  { src: '/images/project-commercial.jpg', name: 'Harborview Tower', type: 'Commercial', location: 'Downtown Metro City', year: '2022', span: 'tall' },
-  { src: '/images/project-residential.jpg', name: 'Oakridge Communities', type: 'Residential', location: 'Eastside, Metro City', year: '2022' },
-  { src: '/images/project-bridge.jpg', name: 'Northspan Bridge', type: 'Highway', location: 'Northport Crossing', year: '2021' },
+  { src: '/images/project-airport.jpg', name: 'Metrojet Hangar', type: 'Hangar', location: 'Clark Freeport Zone, Pampanga', year: '2020', span: 'wide' },
+  { src: '/images/project-warehouse.jpg', name: 'AIPI Kaifeng Warehouse', type: 'Warehouse', location: 'Angeles Industrial Park, Bacolor', year: '2017' },
+  { src: '/images/project-commercial.jpg', name: 'New Municipal Hall', type: 'Institutional', location: 'Concepcion, Tarlac', year: '2024', span: 'tall' },
+  { src: '/images/project-road.jpg', name: 'SIA Engineering Hangar 2', type: 'Hangar', location: 'Clark Freeport Zone, Pampanga', year: '2021' },
+  { src: '/images/project-residential.jpg', name: 'D&A Warehouse', type: 'Warehouse', location: 'Angeles Industrial Park, Bacolor', year: '2016' },
+  { src: '/images/project-bridge.jpg', name: 'NLEX Tree Trimming', type: 'Civil', location: 'North Luzon Expressway & SCTEX', year: '2024' },
 ];
 
 export default function ProjectsPage() {
@@ -23,8 +23,8 @@ export default function ProjectsPage() {
       <section className={styles.pageHeader} aria-label="Projects header">
         <div className={styles.pageHeaderInner}>
           <p className={styles.eyebrow}>Our Portfolio</p>
-          <h1>850+ Projects.<br />Every Sector.</h1>
-          <p className={styles.subtitle}>Recent work spanning airports, highways, warehouses, commercial towers, and residential communities.</p>
+          <h1>50+ Projects.<br />Every Sector.</h1>
+          <p className={styles.subtitle}>Completed work spanning hangars, warehouses, institutional buildings, aviation facilities, and civil infrastructure across Pampanga and beyond.</p>
         </div>
         <div className={styles.headerSlant} aria-hidden="true" />
       </section>

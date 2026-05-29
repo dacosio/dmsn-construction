@@ -78,6 +78,8 @@
 .serviceImage {
   position: relative;
   overflow: hidden;
+  min-height: 320px;
+  height: 100%;
 }
 
 .serviceImg {

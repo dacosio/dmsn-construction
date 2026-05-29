@@ -30,9 +30,9 @@ export default function Navbar() {
   return (
     <header className={[styles.header, scrolled || !isHome ? styles.solid : ''].filter(Boolean).join(' ')}>
       <div className={styles.inner}>
-        <Link href="/" className={styles.logo} aria-label="Ironclad Construction home">
+        <Link href="/" className={styles.logo} aria-label="DMSN home">
           <span className={styles.logoIcon}>⬛</span>
-          <span>IRON<span className={styles.logoAccent}>CLAD</span></span>
+          <span>DMSN<span className={styles.logoAccent}></span></span>
         </Link>
 
         <nav className={styles.nav} aria-label="Main navigation">

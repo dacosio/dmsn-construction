@@ -2,6 +2,7 @@
 .hero {
   position: relative;
   height: 100vh;
+  height: 100svh;
   min-height: 640px;
   display: flex;
   flex-direction: column;
@@ -11,7 +12,7 @@
 
 .heroImg {
   object-fit: cover;
-  object-position: center 30%;
+  object-position: center center;
 }
 
 .heroOverlay {
@@ -19,8 +20,8 @@
   inset: 0;
   background: linear-gradient(
     110deg,
-    rgba(9, 15, 25, 0.92) 45%,
-    rgba(9, 15, 25, 0.55) 100%
+    rgba(9, 15, 25, 0.75) 40%,
+    rgba(9, 15, 25, 0.35) 100%
   );
 }
 
@@ -97,7 +98,7 @@
   z-index: 2;
   background: var(--color-red);
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   max-width: 600px;
 }
 
@@ -433,12 +434,11 @@
 }
 
 @media (max-width: 768px) {
-  /* Pull stats out of absolute flow so they don't overlap hero content */
   .hero {
-    height: auto;
-    min-height: 100svh;
-    justify-content: space-between;
-    padding-top: calc(var(--nav-height) + var(--spacing-lg));
+    height: 100vh;
+    height: 100svh;
+    justify-content: flex-end;
+    padding-bottom: 90px;
   }
 
   .heroContent {
@@ -446,12 +446,14 @@
   }
 
   .heroStats {
-    position: static;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     max-width: 100%;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  /* Hide the corner badge — overlaps title on narrow screens */
   .heroBadge { display: none; }
 
   .projectsGrid { grid-template-columns: 1fr; }
@@ -461,9 +463,5 @@
 
 @media (max-width: 500px) {
   .specGrid { grid-template-columns: 1fr 1fr; }
-  /* 2×2 grid for stats on very small screens */
-  .heroStats { grid-template-columns: repeat(2, 1fr); }
-  .heroStat { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.15); }
-  .heroStat:nth-child(odd) { border-right: 1px solid rgba(255,255,255,0.15); }
-  .heroStat:nth-last-child(-n+2) { border-bottom: none; }
+  .heroStats { grid-template-columns: repeat(3, 1fr); }
 }
